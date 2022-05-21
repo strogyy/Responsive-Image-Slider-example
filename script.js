@@ -82,12 +82,14 @@ sliderContainer.addEventListener("mouseout", () => {
 
 //slide icon toggle
 slideIcons[0].addEventListener("click", () => {
+  slider.style.transition = "1s ease";
   activeClassRemove();
   counter = 0;
   slider.style.left = "-" + slideWidth * counter + "px";
   activeClassAdd();
 });
 slideIcons[1].addEventListener("click", () => {
+  slider.style.transition = "1s ease";
   activeClassRemove();
   counter = 1;
   slider.style.left = "-" + slideWidth * counter + "px";
